@@ -1,21 +1,16 @@
-/datum/species/android
-	name = "Android"
-	id = SPECIES_ANDROID
+/datum/species/IPC
+	name = "IPC"
+	id = SPECIES_IPC
 	say_mod = "states"
-	species_traits = list(NOBLOOD, NO_DNA_COPY, NOTRANSSTING, AGENDER, NO_UNDERWEAR)
+	species_traits = list(NO_DNA_COPY, NOTRANSSTING, AGENDER, NO_UNDERWEAR)
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_NOMETABOLISM,
-		TRAIT_RESISTHEAT,
 		TRAIT_NOBREATH,
 		TRAIT_RESISTCOLD,
-		TRAIT_RESISTHIGHPRESSURE,
-		TRAIT_RESISTLOWPRESSURE,
 		TRAIT_GENELESS,
 		TRAIT_PIERCEIMMUNE,
-		TRAIT_NOHUNGER,
-		TRAIT_LIMBATTACHMENT,
 		TRAIT_NOCLONELOSS,
 	)
 	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID
@@ -26,6 +21,11 @@
   mutantbrain = /obj/item/mmi/posibrain
   exotic_blood = /datum/reagent/consumable/liquidelectricity
 	species_language_holder = /datum/language_holder/synthetic
+	brutemod = 1.5
+	burnmod = 1.25
+	toxinmod = 0.75
+	heatmod = 1.25
+	payday_modifier = 0.25
 	wings_icons = list("Robotic")
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 
@@ -39,7 +39,7 @@
 	)
 	examine_limb_id = SPECIES_HUMAN
 
-/datum/species/android/on_species_gain(mob/living/carbon/C)
+/datum/species/IPC/on_species_gain(mob/living/carbon/C, datum/species/old_species, pref_load)
 	. = ..()
 	// Androids don't eat, hunger or metabolise foods. Let's do some cleanup.
 	C.set_safe_hunger_level()
