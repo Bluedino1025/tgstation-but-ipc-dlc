@@ -18,6 +18,11 @@
 	damage_overlay_type = "synth"
 	mutanttongue = /obj/item/organ/tongue/robot
   mutantstomach = /obj/item/stock_parts/cell
+  mutantheart = /obj/item/organ/heart/cybernetic
+  mutantears = /obj/item/organ/ears/cybernetic
+  mutantliver = /obj/item/organ/liver/cybernetic
+  mutantlungs = /obj/item/organ/lungs/cybernetic
+  mutanteyes = /obj/item/organ/eyes/robotic
   mutantbrain = /obj/item/mmi/posibrain
   exotic_blood = /datum/reagent/consumable/liquidelectricity
 	species_language_holder = /datum/language_holder/synthetic
