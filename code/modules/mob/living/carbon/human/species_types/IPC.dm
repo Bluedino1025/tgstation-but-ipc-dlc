@@ -17,7 +17,7 @@
 	meat = null
 	damage_overlay_type = "synth"
 	mutanttongue = /obj/item/organ/tongue/robot
-  mutantheart = /obj/item/stock_parts/cell
+  mutantstomach = /obj/item/stock_parts/cell
   mutantbrain = /obj/item/mmi/posibrain
   exotic_blood = /datum/reagent/consumable/liquidelectricity
 	species_language_holder = /datum/language_holder/synthetic
