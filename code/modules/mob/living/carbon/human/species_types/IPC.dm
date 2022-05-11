@@ -2,7 +2,7 @@
 	name = "IPC"
 	id = SPECIES_IPC
 	say_mod = "states"
-	species_traits = list(NO_DNA_COPY, NOTRANSSTING, AGENDER, NO_UNDERWEAR)
+	species_traits = list(NO_DNA_COPY, NOTRANSSTING, MUTCOLORS, AGENDER, NO_UNDERWEAR)
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
@@ -24,7 +24,7 @@
   mutantlungs = /obj/item/organ/lungs/cybernetic
   mutanteyes = /obj/item/organ/eyes/robotic
   mutantbrain = /obj/item/mmi/posibrain
-  exotic_blood = /datum/reagent/consumable/liquidelectricity
+  exotic_blood = /datum/reagent/oil
 	species_language_holder = /datum/language_holder/synthetic
 	brutemod = 1.5
 	burnmod = 1.25
